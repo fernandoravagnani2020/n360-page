@@ -625,8 +625,11 @@ ul { list-style: none; }
   transition: var(--transition);
 }
 .contact-card.whatsapp .contact-icon { color: #25d366; background: rgba(37,211,102,0.1); }
+.contact-card.instagram .contact-icon { color: #e1306c; background: rgba(225,48,108,0.1); }
 .contact-card:hover .contact-icon { background: var(--green); color: var(--black); }
 .contact-card.whatsapp:hover .contact-icon { background: #25d366; color: var(--white); }
+.contact-card.instagram:hover { border-color: #e1306c; }
+.contact-card.instagram:hover .contact-icon { background: #e1306c; color: var(--white); }
 .contact-card div { display: flex; flex-direction: column; gap: 2px; }
 .contact-label {
   font-size: 0.68rem;
@@ -694,6 +697,17 @@ ul { list-style: none; }
   gap: 10px;
 }
 .footer-contact p i { color: var(--green); font-size: 0.8rem; }
+.footer-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-top: 4px;
+  transition: color var(--transition);
+}
+.footer-instagram i { color: #e1306c; font-size: 0.9rem; }
+.footer-instagram:hover { color: #e1306c; }
 .footer-bottom {
   padding: 20px 0;
   text-align: center;
