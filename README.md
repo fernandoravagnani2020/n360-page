@@ -36,5 +36,5 @@ Se puede subir tal cual a cualquier hosting estatico:
 ## Antes de publicar en dominio final
 
 - Reemplazar o completar metadatos `og:` si queres compartir mejor en WhatsApp e Instagram
-- Si tenes dominio propio, agregar `sitemap.xml` con esa URL final
+- El dominio configurado es `https://www.n360ces.com.ar`
 - Verificar que el numero de WhatsApp, Instagram y direccion sigan correctos
