@@ -3,307 +3,488 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>N360 | Centro de Entrenamiento y Salud</title>
+  <title>N360 | Gimnasio, Salud y Rendimiento</title>
+  <meta
+    name="description"
+    content="N360 es un centro de entrenamiento y salud en Coronel Baigorria con musculacion, funcional, cardio, rehabilitacion y atencion personalizada."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#111111" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="N360 | Gimnasio, Salud y Rendimiento" />
+  <meta property="og:description" content="Musculacion, funcional, cardio y rehabilitacion en Coronel Baigorria." />
+  <meta property="og:locale" content="es_AR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="N360 | Gimnasio, Salud y Rendimiento" />
+  <meta name="twitter:description" content="Musculacion, funcional, cardio y rehabilitacion en Coronel Baigorria." />
   <link rel="icon" type="image/png" sizes="512x512" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Sora:wght@400;600;700;800&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <noscript>
+    <div class="noscript-banner">Esta pagina funciona mejor con JavaScript activado.</div>
+  </noscript>
 
-  <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#inicio" class="nav-logo">
+      <a href="#inicio" class="nav-logo" aria-label="Ir al inicio">
         <img src="logo.png" alt="N360" class="logo-img" onerror="this.style.display='none'; document.querySelector('.logo-fallback').style.display='block'" />
         <span class="logo-fallback">N<span>360</span></span>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
         <li><a href="#horarios" class="nav-link">Horarios</a></li>
         <li><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
-        <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+        <li><a href="#ubicacion" class="nav-link">Ubicacion</a></li>
         <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ====== HERO ====== -->
-  <section class="hero" id="inicio">
+  <header class="hero" id="inicio">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
-    <div class="hero-content reveal">
-      <span class="hero-tag">Centro de Entrenamiento y Salud</span>
-      <h1>ENTRENÁ<br /><span class="hero-accent">SIN LÍMITES</span></h1>
-      <div class="hero-pills">
-        <span>Musculación</span>
-        <span>Funcional</span>
-        <span>Rehabilitación</span>
-      </div>
-      <div class="hero-actions">
-        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
-        <a href="#contacto" class="btn btn-outline">Contactanos</a>
-      </div>
-    </div>
-    <a href="#servicios" class="hero-scroll-hint">
-      <span>Descubrí más</span>
-      <i class="fas fa-chevron-down"></i>
-    </a>
-  </section>
-
-  <!-- ====== SERVICIOS ====== -->
-  <section class="section bg-light" id="servicios">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Lo que ofrecemos</span>
-        <h2>NUESTROS SERVICIOS</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <i class="fas fa-dumbbell"></i>
-          </div>
-          <h3>Musculación</h3>
-          <p>Equipamiento de primer nivel para desarrollar tu fuerza y masa muscular. Entrenadores especializados disponibles para guiar tu progreso.</p>
-          <div class="card-accent"></div>
+    <div class="hero-grid container">
+      <div class="hero-copy reveal">
+        <span class="hero-tag">Centro de entrenamiento y salud</span>
+        <h1>
+          Entrena con
+          <span class="hero-accent">energia real</span>
+          y objetivos claros.
+        </h1>
+        <p class="hero-text">
+          En N360 combinamos musculacion, funcional, cardio y rehabilitacion para que puedas mejorar tu rendimiento, recuperarte mejor y sostener una rutina que sirva de verdad.
+        </p>
+        <div class="hero-pills">
+          <span>Musculacion</span>
+          <span>Funcional</span>
+          <span>Cardio</span>
+          <span>Rehabilitacion</span>
         </div>
-        <div class="service-card featured reveal">
-          <div class="service-icon-wrap">
-            <i class="fas fa-person-running"></i>
-          </div>
-          <h3>Clases Funcionales</h3>
-          <p>Entrenamiento funcional en grupos reducidos que mejora tu rendimiento físico general, coordinación, resistencia y fuerza corporal.</p>
-          <div class="card-accent"></div>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon-wrap">
-            <i class="fas fa-heart-pulse"></i>
-          </div>
-          <h3>Rehabilitación</h3>
-          <p>Programas personalizados de recuperación física supervisados por profesionales de la salud para que vuelvas a tu mejor versión.</p>
-          <div class="card-accent"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== HORARIOS ====== -->
-  <section class="section bg-dark" id="horarios">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Planificá tu rutina</span>
-        <h2>HORARIOS</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="schedule-wrapper reveal">
-        <div class="schedule-block">
-          <div class="schedule-icon"><i class="fas fa-sun"></i></div>
-          <div>
-            <p class="schedule-label">Turno Mañana</p>
-            <p class="schedule-time">07:00 — 11:00</p>
-          </div>
-        </div>
-        <div class="schedule-sep">
-          <div class="sep-line"></div>
-          <div class="sep-dot"></div>
-          <div class="sep-line"></div>
-        </div>
-        <div class="schedule-block">
-          <div class="schedule-icon"><i class="fas fa-moon"></i></div>
-          <div>
-            <p class="schedule-label">Turno Tarde / Noche</p>
-            <p class="schedule-time">14:00 — 21:30</p>
-          </div>
-        </div>
-      </div>
-      <div class="days-row reveal">
-        <div class="day-chip active">Lunes</div>
-        <div class="day-chip active">Martes</div>
-        <div class="day-chip active">Miércoles</div>
-        <div class="day-chip active">Jueves</div>
-        <div class="day-chip active">Viernes</div>
-        <div class="day-chip">Sábado</div>
-        <div class="day-chip">Domingo</div>
-      </div>
-      <p class="schedule-note reveal"><i class="fas fa-circle-info"></i> Sábados y domingos el centro permanece cerrado.</p>
-    </div>
-  </section>
-
-  <!-- ====== INSTALACIONES ====== -->
-  <section class="section bg-light" id="instalaciones">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Conocé el espacio</span>
-        <h2>INSTALACIONES</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="facilities-grid reveal">
-        <div class="facility-item large">
-          <img src="musculacion2.jpg" alt="Sala de Musculación" />
-          <span class="facility-label">Sala de Musculación</span>
-        </div>
-        <div class="facility-item">
-          <img src="funcional.jpg" alt="Área Funcional" />
-          <span class="facility-label">Área Funcional</span>
-        </div>
-        <div class="facility-item">
-          <img src="cardio2.jpg" alt="Zona de Cardio" />
-          <span class="facility-label">Zona de Cardio</span>
-        </div>
-        <div class="facility-item">
-          <img src="vestuarios.jpg" />
-          <span class="facility-label">Musculación</span>
-        </div>
-        <div class="facility-item">
-          <img src="rehabilitacion.jpg" alt="Sala de Rehabilitación" />
-          <span class="facility-label">Sala de Rehabilitación</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== UBICACIÓN ====== -->
-  <section class="section bg-dark" id="ubicacion">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Encontranos</span>
-        <h2>UBICACIÓN</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="location-wrapper">
-        <div class="location-info reveal">
-          <div class="loc-item">
-            <div class="loc-icon"><i class="fas fa-location-dot"></i></div>
-            <div>
-              <h4>Dirección</h4>
-              <p>Mitre 245, Coronel Baigorria<br />Córdoba, Argentina</p>
-            </div>
-          </div>
-          <div class="loc-item">
-            <div class="loc-icon"><i class="fas fa-clock"></i></div>
-            <div>
-              <h4>Horarios</h4>
-              <p>Lunes a Viernes<br />07:00 – 11:00 &nbsp;·&nbsp; 14:00 – 21:30</p>
-            </div>
-          </div>
-          <div class="loc-item">
-            <div class="loc-icon"><i class="fas fa-phone"></i></div>
-            <div>
-              <h4>Teléfonos</h4>
-              <p>
-                <a href="tel:+543584826243">358 482-6243</a><br />
-                <a href="tel:+543585487170">358 548-7170</a><br />
-                <a href="tel:+543584294011">358 429-4011</a>
-              </p>
-            </div>
-          </div>
-          <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" class="btn btn-primary btn-wa">
-            <i class="fab fa-whatsapp"></i> Escribinos por WhatsApp
+        <div class="hero-actions">
+          <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+          <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" rel="noreferrer" class="btn btn-outline">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            Consultar por WhatsApp
           </a>
         </div>
-        <div class="map-wrap reveal">
-          <iframe
-            title="Mapa N360"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.0!2d-64.3608443!3d-32.8486664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d20b0068e5de57%3A0xbb17226499fdc1ba!2sN360%20-%20Centro%20de%20Entrenamiento%20y%20Salud!5e0!3m2!1ses-419!2sar!4v1713456789123!5m2!1ses-419!2sar"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
+      </div>
+
+      <aside class="hero-panel reveal">
+        <div class="hero-panel-card">
+          <p class="panel-kicker">Lo que encontras en N360</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>4</strong>
+              <span>Areas de entrenamiento</span>
+            </div>
+            <div class="stat-item">
+              <strong>2</strong>
+              <span>Turnos por dia</span>
+            </div>
+            <div class="stat-item">
+              <strong>5</strong>
+              <span>Dias por semana</span>
+            </div>
+          </div>
+          <ul class="hero-list">
+            <li><i class="fas fa-circle-check" aria-hidden="true"></i> Atencion personalizada</li>
+            <li><i class="fas fa-circle-check" aria-hidden="true"></i> Equipamiento para fuerza y cardio</li>
+            <li><i class="fas fa-circle-check" aria-hidden="true"></i> Espacio para readaptacion y rehabilitacion</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <a href="#servicios" class="hero-scroll-hint" aria-label="Ir a servicios">
+      <span>Descubri mas</span>
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </a>
+  </header>
+
+  <main>
+    <section class="utility-strip" aria-label="Beneficios principales">
+      <div class="container utility-grid reveal">
+        <article class="utility-item">
+          <i class="fas fa-dumbbell" aria-hidden="true"></i>
+          <div>
+            <h2>Fuerza y progreso</h2>
+            <p>Rutinas para ganar fuerza, masa muscular y constancia.</p>
+          </div>
+        </article>
+        <article class="utility-item">
+          <i class="fas fa-bolt" aria-hidden="true"></i>
+          <div>
+            <h2>Movimiento funcional</h2>
+            <p>Clases dinamicas para mejorar resistencia, coordinacion y movilidad.</p>
+          </div>
+        </article>
+        <article class="utility-item">
+          <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+          <div>
+            <h2>Salud y recuperacion</h2>
+            <p>Trabajo supervisado para volver a entrenar con seguridad.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-light" id="servicios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Servicios</span>
+          <h2>Todo lo que necesitas para entrenar mejor</h2>
+          <p>
+            El gimnasio esta pensado para acompañarte tanto si recien arrancas como si ya tenes una rutina consolidada.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon-wrap">
+              <i class="fas fa-dumbbell" aria-hidden="true"></i>
+            </div>
+            <h3>Musculacion</h3>
+            <p>Zona equipada para desarrollar fuerza, tecnica y composicion corporal con seguimiento cercano.</p>
+            <ul class="feature-list">
+              <li>Maquinas y pesos libres</li>
+              <li>Rutinas adaptadas a tu objetivo</li>
+              <li>Apoyo profesional durante el proceso</li>
+            </ul>
+          </article>
+
+          <article class="service-card featured reveal">
+            <div class="service-icon-wrap">
+              <i class="fas fa-person-running" aria-hidden="true"></i>
+            </div>
+            <h3>Entrenamiento funcional</h3>
+            <p>Sesiones para mejorar potencia, estabilidad, coordinacion y capacidad aerobica en un entorno activo.</p>
+            <ul class="feature-list">
+              <li>Trabajo en grupos reducidos</li>
+              <li>Ejercicios globales y dinamicos</li>
+              <li>Ideal para rendimiento general</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon-wrap">
+              <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+            </div>
+            <h3>Rehabilitacion</h3>
+            <p>Planes de recuperacion y readaptacion fisica para retomar la actividad con control y confianza.</p>
+            <ul class="feature-list">
+              <li>Seguimiento segun tu necesidad</li>
+              <li>Trabajo progresivo y seguro</li>
+              <li>Enfoque en salud y retorno al movimiento</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ====== CONTACTO ====== -->
-  <section class="section bg-light" id="contacto">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Hablemos</span>
-        <h2>CONTACTO</h2>
-        <div class="section-line"></div>
-      </div>
-      <p class="contact-intro reveal">Comunicate con nosotros por el medio que prefieras.</p>
-      <div class="contact-grid reveal">
-        <a href="tel:+543584826243" class="contact-card">
-          <div class="contact-icon"><i class="fas fa-phone"></i></div>
-          <div>
-            <span class="contact-label">Teléfono</span>
-            <span class="contact-value">358 482-6243</span>
-          </div>
-        </a>
-        <a href="tel:+543585487170" class="contact-card">
-          <div class="contact-icon"><i class="fas fa-phone"></i></div>
-          <div>
-            <span class="contact-label">Teléfono</span>
-            <span class="contact-value">358 548-7170</span>
-          </div>
-        </a>
-        <a href="tel:+543584294011" class="contact-card">
-          <div class="contact-icon"><i class="fas fa-phone"></i></div>
-          <div>
-            <span class="contact-label">Teléfono</span>
-            <span class="contact-value">358 429-4011</span>
-          </div>
-        </a>
-        <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" class="contact-card whatsapp">
-          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-          <div>
-            <span class="contact-label">WhatsApp</span>
-            <span class="contact-value">358 482-6243</span>
-          </div>
-        </a>
-        <a href="https://instagram.com/n360_ces" target="_blank" class="contact-card instagram">
-          <div class="contact-icon"><i class="fab fa-instagram"></i></div>
-          <div>
-            <span class="contact-label">Instagram</span>
-            <span class="contact-value">@n360_ces</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <section class="section section-dark" id="beneficios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Utilidades del gimnasio</span>
+          <h2>Un espacio pensado para rendimiento, bienestar y continuidad</h2>
+        </div>
 
-  <!-- ====== FOOTER ====== -->
+        <div class="benefits-layout">
+          <div class="benefits-copy reveal">
+            <p class="lead">
+              N360 no es solo un lugar para entrenar. Es un espacio donde podes mejorar tu condicion fisica, prevenir lesiones, recuperar movilidad y sostener habitos saludables en el tiempo.
+            </p>
+            <div class="benefits-grid">
+              <article class="benefit-card">
+                <i class="fas fa-gauge-high" aria-hidden="true"></i>
+                <h3>Mas rendimiento</h3>
+                <p>Entrenamientos orientados a fuerza, resistencia y mejor respuesta fisica en tu dia a dia.</p>
+              </article>
+              <article class="benefit-card">
+                <i class="fas fa-shield-heart" aria-hidden="true"></i>
+                <h3>Menos riesgo</h3>
+                <p>Trabajo tecnico y progresivo para entrenar con criterio y reducir sobrecargas innecesarias.</p>
+              </article>
+              <article class="benefit-card">
+                <i class="fas fa-person-walking" aria-hidden="true"></i>
+                <h3>Mas movilidad</h3>
+                <p>Rutinas que ayudan a sentirte mejor, moverte mejor y recuperar confianza en cada etapa.</p>
+              </article>
+              <article class="benefit-card">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <h3>Acompanamiento real</h3>
+                <p>Atencion humana, seguimiento cercano y un entorno que facilita sostener la constancia.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="benefits-panel reveal">
+            <div class="panel-box">
+              <span class="mini-tag">Ideal para</span>
+              <ul class="panel-list">
+                <li>Personas que quieren empezar a entrenar</li>
+                <li>Quienes buscan mejorar su estado fisico general</li>
+                <li>Deportistas que necesitan complementar su preparacion</li>
+                <li>Personas en procesos de recuperacion fisica</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="horarios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Horarios</span>
+          <h2>Organiza tu semana sin complicarte</h2>
+          <p>Atendemos en dos turnos para que puedas adaptar tu rutina al trabajo, estudio o vida diaria.</p>
+        </div>
+
+        <div class="schedule-wrapper reveal">
+          <div class="schedule-block">
+            <div class="schedule-icon"><i class="fas fa-sun" aria-hidden="true"></i></div>
+            <div>
+              <p class="schedule-label">Turno manana</p>
+              <p class="schedule-time">07:00 - 11:00</p>
+            </div>
+          </div>
+          <div class="schedule-sep">
+            <div class="sep-line"></div>
+            <div class="sep-dot"></div>
+            <div class="sep-line"></div>
+          </div>
+          <div class="schedule-block">
+            <div class="schedule-icon"><i class="fas fa-moon" aria-hidden="true"></i></div>
+            <div>
+              <p class="schedule-label">Turno tarde / noche</p>
+              <p class="schedule-time">14:00 - 21:30</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="days-row reveal">
+          <span class="day-chip active">Lunes</span>
+          <span class="day-chip active">Martes</span>
+          <span class="day-chip active">Miercoles</span>
+          <span class="day-chip active">Jueves</span>
+          <span class="day-chip active">Viernes</span>
+          <span class="day-chip">Sabado</span>
+          <span class="day-chip">Domingo</span>
+        </div>
+
+        <p class="schedule-note reveal">
+          <i class="fas fa-circle-info" aria-hidden="true"></i>
+          Sabados y domingos el centro permanece cerrado.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-light gallery-section" id="instalaciones">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Instalaciones</span>
+          <h2>Espacios preparados para entrenar con comodidad</h2>
+          <p>Conoce algunas de las areas del gimnasio y el entorno en el que vas a entrenar.</p>
+        </div>
+
+        <div class="facilities-grid reveal">
+          <figure class="facility-item large">
+            <img src="musculacion2.jpg" alt="Sala principal de musculacion" loading="lazy" />
+            <figcaption class="facility-label">Sala de musculacion</figcaption>
+          </figure>
+          <figure class="facility-item">
+            <img src="funcional.jpg" alt="Espacio de entrenamiento funcional" loading="lazy" />
+            <figcaption class="facility-label">Area funcional</figcaption>
+          </figure>
+          <figure class="facility-item">
+            <img src="cardio2.jpg" alt="Zona de cardio con cintas y bicicletas" loading="lazy" />
+            <figcaption class="facility-label">Zona cardio</figcaption>
+          </figure>
+          <figure class="facility-item">
+            <img src="vestuarios.jpg" alt="Sector de vestuarios del gimnasio" loading="lazy" />
+            <figcaption class="facility-label">Vestuarios</figcaption>
+          </figure>
+          <figure class="facility-item">
+            <img src="rehabilitacion.jpg" alt="Sala de rehabilitacion y readaptacion" loading="lazy" />
+            <figcaption class="facility-label">Rehabilitacion</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="ubicacion">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Ubicacion</span>
+          <h2>Estamos en Coronel Baigorria</h2>
+        </div>
+
+        <div class="location-wrapper">
+          <div class="location-info reveal">
+            <article class="loc-item">
+              <div class="loc-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+              <div>
+                <h3>Direccion</h3>
+                <p>Mitre 245, Coronel Baigorria, Cordoba, Argentina</p>
+              </div>
+            </article>
+            <article class="loc-item">
+              <div class="loc-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+              <div>
+                <h3>Horarios</h3>
+                <p>Lunes a viernes de 07:00 a 11:00 y de 14:00 a 21:30.</p>
+              </div>
+            </article>
+            <article class="loc-item">
+              <div class="loc-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+              <div>
+                <h3>Telefonos</h3>
+                <p>
+                  <a href="tel:+543584826243">358 482-6243</a><br />
+                  <a href="tel:+543585487170">358 548-7170</a><br />
+                  <a href="tel:+543584294011">358 429-4011</a>
+                </p>
+              </div>
+            </article>
+            <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" rel="noreferrer" class="btn btn-primary btn-wa">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              Escribinos por WhatsApp
+            </a>
+          </div>
+
+          <div class="map-wrap reveal">
+            <iframe
+              title="Mapa N360"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.0!2d-64.3608443!3d-32.8486664!2m3!1f0!2f0!3f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d20b0068e5de57%3A0xbb17226499fdc1ba!2sN360%20-%20Centro%20de%20Entrenamiento%20y%20Salud!5e0!3m2!1ses-419!2sar!4v1713456789123!5m2!1ses-419!2sar"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="contacto">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contacto</span>
+          <h2>Elegi el canal que te quede mas comodo</h2>
+          <p>Si queres conocer el gimnasio, consultar por horarios o empezar a entrenar, escribinos.</p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <a href="tel:+543584826243" class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <div>
+              <span class="contact-label">Telefono</span>
+              <span class="contact-value">358 482-6243</span>
+            </div>
+          </a>
+          <a href="tel:+543585487170" class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <div>
+              <span class="contact-label">Telefono</span>
+              <span class="contact-value">358 548-7170</span>
+            </div>
+          </a>
+          <a href="tel:+543584294011" class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <div>
+              <span class="contact-label">Telefono</span>
+              <span class="contact-value">358 429-4011</span>
+            </div>
+          </a>
+          <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" rel="noreferrer" class="contact-card whatsapp">
+            <div class="contact-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">Consulta directa</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/n360_ces" target="_blank" rel="noreferrer" class="contact-card instagram">
+            <div class="contact-icon"><i class="fab fa-instagram" aria-hidden="true"></i></div>
+            <div>
+              <span class="contact-label">Instagram</span>
+              <span class="contact-value">@n360_ces</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
           <img src="logo.png" alt="N360" class="footer-logo-img" />
-          <p class="footer-sub">Centro de Entrenamiento y Salud</p>
-          <p class="footer-addr">Mitre 245, Coronel Baigorria, Córdoba</p>
+          <p class="footer-sub">Gimnasio, entrenamiento y salud</p>
+          <p class="footer-addr">Mitre 245, Coronel Baigorria, Cordoba</p>
         </div>
+
         <nav class="footer-nav">
           <a href="#servicios">Servicios</a>
+          <a href="#beneficios">Beneficios</a>
           <a href="#horarios">Horarios</a>
           <a href="#instalaciones">Instalaciones</a>
-          <a href="#ubicacion">Ubicación</a>
           <a href="#contacto">Contacto</a>
         </nav>
+
         <div class="footer-contact">
-          <p><i class="fas fa-phone"></i> 358 482-6243</p>
-          <p><i class="fas fa-phone"></i> 358 548-7170</p>
-          <p><i class="fas fa-phone"></i> 358 429-4011</p>
-          <a href="https://instagram.com/n360_ces" target="_blank" class="footer-instagram">
-            <i class="fab fa-instagram"></i> @n360_ces
+          <p><i class="fas fa-phone" aria-hidden="true"></i> 358 482-6243</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> 358 548-7170</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> 358 429-4011</p>
+          <a href="https://instagram.com/n360_ces" target="_blank" rel="noreferrer" class="footer-instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            @n360_ces
           </a>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 N360 Centro de Entrenamiento y Salud. Todos los derechos reservados.</p>
+        <p>&copy; <span id="current-year">2026</span> N360. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp float button -->
-  <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" class="wa-float" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+  <a href="https://wa.me/543584826243?text=Hola!%20Quiero%20consultar%20sobre%20N360" target="_blank" rel="noreferrer" class="wa-float" aria-label="Escribinos por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 
   <script src="script.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "N360",
+      "description": "Centro de entrenamiento y salud con musculacion, funcional, cardio y rehabilitacion.",
+      "telephone": ["+54 358 482-6243", "+54 358 548-7170", "+54 358 429-4011"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mitre 245",
+        "addressLocality": "Coronel Baigorria",
+        "addressRegion": "Cordoba",
+        "addressCountry": "AR"
+      },
+      "openingHours": ["Mo-Fr 07:00-11:00", "Mo-Fr 14:00-21:30"],
+      "sameAs": ["https://instagram.com/n360_ces"]
+    }
+  </script>
 </body>
 </html>

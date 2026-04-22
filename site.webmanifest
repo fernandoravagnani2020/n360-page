@@ -1,0 +1,16 @@
+{
+  "name": "N360",
+  "short_name": "N360",
+  "description": "Centro de entrenamiento y salud",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5efe4",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
