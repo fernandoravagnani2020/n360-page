@@ -1307,3 +1307,282 @@ select {
     bottom: 18px;
   }
 }
+
+/* ============================================
+   PRODE MUNDIALISTA
+   ============================================ */
+
+.nav-prode {
+  color: #f97316 !important;
+  font-weight: 700 !important;
+}
+
+.prode-section {
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+.prode-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.prode-copy h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 12px 0 16px;
+  color: #fff;
+}
+
+.prode-accent {
+  color: #f97316;
+}
+
+.prode-tag {
+  background: #f97316;
+  color: #000;
+  font-weight: 700;
+}
+
+.prode-copy .lead {
+  color: #9ca3af;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.prode-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prode-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.prode-features li i {
+  color: #22c55e;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.prode-points {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.prode-point-item {
+  flex: 1;
+  text-align: center;
+  padding: 14px 10px;
+  border-radius: 14px;
+  border: 1px solid #242424;
+}
+
+.prode-point-item strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.prode-point-item span {
+  display: block;
+  font-size: 0.68rem;
+  color: #6b7280;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+.prode-exact { background: rgba(34,197,94,0.08); border-color: rgba(34,197,94,0.2); }
+.prode-exact strong { color: #22c55e; }
+.prode-result { background: rgba(249,115,22,0.08); border-color: rgba(249,115,22,0.2); }
+.prode-result strong { color: #f97316; }
+.prode-miss { background: #111; }
+.prode-miss strong { color: #4b5563; }
+
+.btn-prode {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #22c55e;
+  color: #000;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 16px 32px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+  margin-bottom: 14px;
+}
+
+.btn-prode:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+.prode-note {
+  font-size: 0.78rem;
+  color: #6b7280;
+  line-height: 1.5;
+  max-width: 340px;
+}
+
+/* Mockup */
+.prode-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.prode-mockup {
+  background: #111;
+  border: 1px solid #242424;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 260px;
+  box-shadow: 0 0 60px rgba(34,197,94,0.08), 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.mockup-header {
+  background: #1a1a1a;
+  padding: 12px 16px;
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid #242424;
+}
+
+.mockup-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2e2e2e;
+}
+
+.mockup-screen {
+  padding: 20px 16px;
+}
+
+.mockup-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+
+.mockup-sub {
+  font-size: 0.65rem;
+  color: #f97316;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.mockup-match {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.mockup-flag { font-size: 1.6rem; }
+
+.mockup-score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.score-num {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.score-sep {
+  color: #4b5563;
+  font-weight: 700;
+}
+
+.mockup-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.mockup-badge-exact {
+  background: #22c55e;
+  color: #000;
+}
+
+.mockup-table {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mockup-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+.mockup-row-gold {
+  background: rgba(234,179,8,0.1);
+  color: #fbbf24;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .prode-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .prode-visual {
+    order: -1;
+  }
+
+  .prode-copy h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .prode-copy h2 {
+    font-size: 1.6rem;
+  }
+
+  .prode-points {
+    gap: 8px;
+  }
+
+  .prode-point-item strong {
+    font-size: 1.4rem;
+  }
+}
